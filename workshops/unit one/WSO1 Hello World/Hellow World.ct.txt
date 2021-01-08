@@ -1,0 +1,12 @@
+//Fernando Rosales Hello world
+
+/*
+some lines of comments
+can be written inthis way 
+thanks
+*/
+class HelloWorrld{
+      public static void main(strings [] args) {
+	     System.out.println("Fernando Rosales Hello world");
+	  }
+	    }
