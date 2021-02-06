@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Fernando Rosales
  */
 public class HW06Numberproblem {
-
+    
     /**
      * @param args the command line arguments
      */
