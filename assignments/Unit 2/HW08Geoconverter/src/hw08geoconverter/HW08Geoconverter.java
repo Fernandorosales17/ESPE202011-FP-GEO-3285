@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Usuario
+ * @author Fernando Rosales
  */
 public class HW08Geoconverter {
 

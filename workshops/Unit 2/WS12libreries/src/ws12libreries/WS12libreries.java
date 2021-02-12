@@ -16,7 +16,6 @@ public class WS12libreries {
      */
     public static void main(String[] args) {
         // DONE
-   
 
         //if we have the Math library
         //we import and use it
