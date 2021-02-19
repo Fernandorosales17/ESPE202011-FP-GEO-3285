@@ -36,29 +36,26 @@ public class WS13_ThysicalFormulas {
 
             if (leave.equals("1")) {
                 System.out.println("Displacement Formula");
-                computerDisplacement(input);
-
+                computer_displacement_formula(input);
             } else if (leave.equals("2")) {
                 System.out.println("Formula Final speed");
-                computerFinalSpeed(input);
+                computer_final_Speed(input);
             } else if (leave.equals("3")) {
                 System.out.println("Formula Armonico");
-                computerArmonico(input);
-            }
-            if (leave.equals("4")) {
+                computer_harmonico_moment(input);
+            } else if (leave.equals("4")) {
                 computerExit();
-
             }
         }
     }
 
     private static void computerExit() {
-         System.out.println("***********GOOD BYE**************");
-                System.out.println("*****THANKS FOR CHOOSING US*****");
-                System.exit(0);
+        System.out.println("***********GOOD BYE**************");
+        System.out.println("*****THANKS FOR CHOOSING US*****");
+        System.exit(0);
     }
 
-    private static void computerArmonico(Scanner input) {
+    private static void computer_harmonico_moment(Scanner input) {
         System.out.println("Formula: T = 2pi * square root of 1 / g");
         System.out.println("====Enter to two pi====");
         double twoPi = input.nextDouble();
@@ -71,7 +68,7 @@ public class WS13_ThysicalFormulas {
         System.out.println("=============");
     }
 
-    private static void computerFinalSpeed(Scanner input) {
+    private static void computer_final_Speed(Scanner input) {
         System.out.println("Formula: Final speed = initial velocity - gravity*time");
         System.out.println("====Enter to initial velocity====");
         double initialVelocity = input.nextDouble();
@@ -86,7 +83,7 @@ public class WS13_ThysicalFormulas {
         System.out.println("=============");
     }
 
-    private static void computerDisplacement(Scanner input) {
+    private static void computer_displacement_formula(Scanner input) {
         System.out.println("Formula: x = initial velocity*time + 1/2 acceleration * time^2 ");
         System.out.println("====Enter to initial velocity====");
         double initialVelocity = input.nextDouble();
