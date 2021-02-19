@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Usuario
+ * @author Fernando Rosales
  */
 public class WS13_ThysicalFormulas {
 
@@ -36,52 +36,68 @@ public class WS13_ThysicalFormulas {
 
             if (leave.equals("1")) {
                 System.out.println("Displacement Formula");
-                System.out.println("Formula: x = initial velocity*time + 1/2 acceleration * time^2 ");
-                System.out.println("====Enter to initial velocity====");
-                double initialVelocity = input.nextDouble();
-                System.out.println("====Enter to time====");
-                double time = input.nextDouble();
-                System.out.println("====Enter to acceleration====");
-                double acceleration = input.nextDouble();
-                double outcome = ((initialVelocity * time) + (acceleration / 2) * (time * time));
-                System.out.println("====ANSWER====");
-                System.out.println("x = " + initialVelocity + "*" + time + " + 1/2 *" + acceleration + " * " + time + "^2");
-                System.out.println("x = " + outcome);
-                System.out.println("===============");
+                computerDisplacement(input);
 
             } else if (leave.equals("2")) {
                 System.out.println("Formula Final speed");
-                System.out.println("Formula: Final speed = initial velocity - gravity*time");
-                System.out.println("====Enter to initial velocity====");
-                double initialVelocity = input.nextDouble();
-                System.out.println("====Enter to gravity====");
-                double gravity = input.nextDouble();
-                System.out.println("====Enter to time====");
-                double time = input.nextDouble();
-                double outcome = ((initialVelocity - gravity) * (time));
-                System.out.println("====ANSWER====");
-                System.out.println("Final speed = " + initialVelocity + "-" + gravity + "*" + time);
-                System.out.println("Final speed = " + outcome);
-                System.out.println("=============");
+                computerFinalSpeed(input);
             } else if (leave.equals("3")) {
                 System.out.println("Formula Armonico");
-                System.out.println("Formula: T = 2pi * square root of 1 / g");
-                System.out.println("====Enter to two pi====");
-                double twoPi = input.nextDouble();
-                System.out.println("====Enter to gsquare root of 1 / g====");
-                double squarerootof1g = input.nextDouble();
-                double outcome = ((twoPi * squarerootof1g));
-                System.out.println("====ANSWER====");
-                System.out.println("Final speed = " + twoPi + "*" + squarerootof1g);
-                System.out.println("Final speed = " + outcome);
-                System.out.println("=============");
+                computerArmonico(input);
             }
             if (leave.equals("4")) {
-                System.out.println("***********GOOD BYE**************");
-                System.out.println("*****THANKS FOR CHOOSING US*****");
-                System.exit(0);
+                computerExit();
 
             }
         }
+    }
+
+    private static void computerExit() {
+         System.out.println("***********GOOD BYE**************");
+                System.out.println("*****THANKS FOR CHOOSING US*****");
+                System.exit(0);
+    }
+
+    private static void computerArmonico(Scanner input) {
+        System.out.println("Formula: T = 2pi * square root of 1 / g");
+        System.out.println("====Enter to two pi====");
+        double twoPi = input.nextDouble();
+        System.out.println("====Enter to gsquare root of 1 / g====");
+        double squarerootof1 = input.nextDouble();
+        double outcome = ((twoPi * squarerootof1));
+        System.out.println("====ANSWER====");
+        System.out.println("Final speed = " + twoPi + "*" + squarerootof1);
+        System.out.println("Final speed = " + outcome);
+        System.out.println("=============");
+    }
+
+    private static void computerFinalSpeed(Scanner input) {
+        System.out.println("Formula: Final speed = initial velocity - gravity*time");
+        System.out.println("====Enter to initial velocity====");
+        double initialVelocity = input.nextDouble();
+        System.out.println("====Enter to gravity====");
+        double gravity = input.nextDouble();
+        System.out.println("====Enter to time====");
+        double time = input.nextDouble();
+        double outcome = ((initialVelocity - gravity) * (time));
+        System.out.println("====ANSWER====");
+        System.out.println("Final speed = " + initialVelocity + "-" + gravity + "*" + time);
+        System.out.println("Final speed = " + outcome);
+        System.out.println("=============");
+    }
+
+    private static void computerDisplacement(Scanner input) {
+        System.out.println("Formula: x = initial velocity*time + 1/2 acceleration * time^2 ");
+        System.out.println("====Enter to initial velocity====");
+        double initialVelocity = input.nextDouble();
+        System.out.println("====Enter to time====");
+        double time = input.nextDouble();
+        System.out.println("====Enter to acceleration====");
+        double acceleration = input.nextDouble();
+        double outcome = ((initialVelocity * time) + (acceleration / 2) * (time * time));
+        System.out.println("====ANSWER====");
+        System.out.println("x = " + initialVelocity + "*" + time + " + 1/2 *" + acceleration + " * " + time + "^2");
+        System.out.println("x = " + outcome);
+        System.out.println("===============");
     }
 }
