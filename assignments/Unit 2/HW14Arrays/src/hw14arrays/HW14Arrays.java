@@ -39,7 +39,7 @@ public class HW14Arrays {
                         "Sperm whale", "Butterfly fish", "Blue whale", "Parrotfish"};
 
                     int n;
-                    System.out.println("Enter the name of the animals aquatic");
+                    System.out.println("Enter the numbers of the animals aquatic");
                     n = input.nextInt();
 
                     aquaticAnimals = new int[n];
@@ -52,7 +52,7 @@ public class HW14Arrays {
 //        animalsaquitc[6] = 2;
 
                     for (int i = 0; i < n; i++) {
-                        System.out.print("Enter the name of the animals" + (i + 1) + " -> ");
+                        System.out.print("Enter the numbers of the animals" + (i + 1) + " -> ");
                         aquaticAnimals[i] = input.nextInt();
                     }
 
