@@ -17,6 +17,7 @@ public class WS15ArrayQ22022021 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
         int[] candidate;
         String[] namesOfCandidates = {"Andrés Arauz ->32.7% ", "Guillermo Lasso ->19.75%", "Yaku Pérez ->19.38%", "Xavier Hervas ->15.69%", "Pedro Freile ->2.08%",
             "Isisdro Romero ->1.86%", "Luicio Gutiérrez ->1.78%", "Gerson Alméida ->1.73%", "Ximena Peña ->1.54%", "Guillermo Celi ->0.91%", "Juan Fernando Velasco ->0.82%",
