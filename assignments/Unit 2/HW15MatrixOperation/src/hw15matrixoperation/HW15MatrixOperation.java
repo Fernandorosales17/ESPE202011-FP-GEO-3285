@@ -37,7 +37,6 @@ public class HW15MatrixOperation {
         int matrixA[][] = new int[rows][columns];;
         int matrixB[][] = new int[rows][columns];;
         int matrixSubtraction[][] = new int[rows][columns];
-        System.out.println(" -------------- ");
 
         System.out.println("Matrix A data:");
         for (int i = 0; i < rows; i++) {
@@ -54,7 +53,6 @@ public class HW15MatrixOperation {
             for (int j = 0; j < columns; j++) {
                 System.out.print("Enter a number for the position: b[" + i + "][" + j + "] " + " matrix B --> ");
                 matrixB[i][j] = input.nextInt();
-
             }
         }
         System.out.println();
@@ -81,7 +79,6 @@ public class HW15MatrixOperation {
             for (int j = 0; j < columns; j++) {
                 matrixSubtraction[i][j] = matrixA[i][j] - matrixB[i][j];
             }
-
         }
         System.out.println(" ------------- ");
         System.out.println("\n The subtraction of the matrices is");
