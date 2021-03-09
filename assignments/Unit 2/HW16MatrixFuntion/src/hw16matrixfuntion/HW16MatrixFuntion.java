@@ -30,7 +30,7 @@ public class HW16MatrixFuntion {
         System.out.println("=*=*=*=I´M STUDENT OF THE ESPE=*=*=*=");
         System.out.println("=*=*=*=MY NAME IS LUIS FERNANDO=*=*=*=");
         System.out.println("=*=*=*=WELCOME TO THE MATRIX SUBTRACTION=*=*=*=");
-        System.out.println("Enter the matrix dimesions");
+        System.out.println("==ENTER THE SQUARE MATRIX==");
         System.out.println(" ---Enter the columns of the arrays---->");
         rows = input.nextInt();
 
@@ -51,12 +51,7 @@ public class HW16MatrixFuntion {
         for (int i = 0; i < rows; i++) {
             System.out.println("\t");
         }
-        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
-        System.out.println("Matrix structure A");
-        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
-        prettyPrintMatrix(columns, rows, matrixA);
-        System.out.println("");
-        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+        printMatrixStructureA(columns, rows, matrixA);
 
         System.out.println("Matrix structure B");
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
@@ -83,6 +78,15 @@ public class HW16MatrixFuntion {
             System.out.println("-*-*-*-*-*-*-*-*-*-*-*-GOOD BYE*-*-*-*-*-*-*-*-*-*-*-*-*-");
             System.out.println("*-*-*-*-*-*-*-THANKS FOR CHOOSING US*-*-*-*-*-*-*");
             System.exit(0);
+    }
+
+    public static void printMatrixStructureA(int columns, int rows, float[][] matrixA) {
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+        System.out.println("Matrix structure A");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+        prettyPrintMatrix(columns, rows, matrixA);
+        System.out.println("");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
     }
 
     public static float[][] readMatrixElements(int columns, int rows, String matrixName, Scanner input) {

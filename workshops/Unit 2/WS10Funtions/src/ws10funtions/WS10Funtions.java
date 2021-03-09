@@ -35,6 +35,7 @@ public class WS10Funtions {
         x = -1;
         y = f(x);
         System.out.println("the square of -> " + x + " <- is equal to -> " + y);
+        System.out.println("Autor--Fernando Rosales");
 
     }
 
