@@ -25,7 +25,7 @@ public class WS23TaxDeclaration {
         final float ivaPercertage = 12;
 
         Scanner input = new Scanner(System.in);
-        System.out.println("=*=*=*=HELLO=*=*=*=");
+        System.out.println("=*=*=*=*=HELLO=*=*=*=");
         System.out.println("=*=*=*=I´M STUDENT OF THE ESPE=*=*=*=");
         System.out.println("=*=*=*=MY NAME IS LUIS FERNANDO=*=*=*=");
         System.out.println("=*=*=*= IVA=*=*=*=");

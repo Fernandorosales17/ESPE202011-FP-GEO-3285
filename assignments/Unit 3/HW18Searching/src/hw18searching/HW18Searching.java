@@ -24,7 +24,7 @@ public class HW18Searching {
         int n = arr.length;
         int x;
         int result;
-        System.out.println("=*=*=*=HELLO WELCOME=*=*=*=");
+        System.out.println("=*=*=*=*=HELLO WELCOME=*=*=*=");
         System.out.println("=*=*=*=I´M STUDENT OF THE ESPE=*=*=*=");
         System.out.println("=*=*=*=MY NAME IS LUIS FERNANDO=*=*=*=");
         System.out.println("=*=*=*=*=*=*=*=*=*=*=*=");
