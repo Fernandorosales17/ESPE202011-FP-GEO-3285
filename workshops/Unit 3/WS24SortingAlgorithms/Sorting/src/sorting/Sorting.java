@@ -5,7 +5,6 @@
  */
 package sorting;
 
-import SelectionSort;
 import java.util.Arrays;
 
 /**

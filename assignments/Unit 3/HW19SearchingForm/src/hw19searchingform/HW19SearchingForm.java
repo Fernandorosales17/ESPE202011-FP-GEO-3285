@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Usuario
+ * @author Fernando Rosales 
  */
 public class HW19SearchingForm {
 
@@ -22,7 +22,7 @@ public class HW19SearchingForm {
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = Integer.parseInt(JOptionPane.showInputDialog((i + 1) + "º Numbers :", 0));
         }
-        String chain = "✼✼✼Unordered numbers✼✼✼ \n";
+        String chain = "✼*✼Unordered numbers✼*✼ \n";
         for (int i = 0; i < numbers.length; i++) {
             chain = chain + numbers[i] + "    ";
         }
